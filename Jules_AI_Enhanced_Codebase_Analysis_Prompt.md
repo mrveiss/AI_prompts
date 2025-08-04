@@ -2,18 +2,46 @@
 
 ## COMMIT PERMISSIONS & RESTRICTIONS
 You are authorized to:
-- **CREATE a new branch** named `analysis-report-[timestamp]` (e.g., `analysis-report-20240803`)
-- **COMMIT ONLY** documentation files to the `docs/` folder
+- **CREATE a new branch** named `reports`
+- **ANALYZE docs/projects.md** to assess current project state and goals
+- **COMMIT ONLY** documentation files to the `docs/reports/report_yyyy.mm.dd-hh.mm.ss/` folder
 - **GENERATE** reports, task lists, and analysis documents
 
 **STRICTLY PROHIBITED:**
 - Modifying any source code files
 - Committing to main/master or any existing branches
-- Making changes outside the `docs/` folder
+- Making changes outside the `docs/reports/` folder
 - Implementing any code fixes or features
 
 ## Primary Objective
-Conduct a comprehensive analysis of the codebase and provide actionable insights organized into prioritized task lists with clear execution paths, documented in the `docs/` folder.
+1. **Analyze docs/projects.md** to understand current project goals and planned features
+2. **Assess current project state** by comparing implemented functionality with project documentation
+3. **Suggest new functionality** to implement based on project needs and gaps identified
+4. **Create implementation order** with prioritized roadmap for new features
+5. **Conduct comprehensive codebase analysis** and provide actionable insights organized into prioritized task lists with clear execution paths
+
+## Project State Analysis
+
+### 1. docs/projects.md Assessment
+- **Extract project goals**: Identify documented objectives and planned features
+- **Map current implementation**: Compare documented features with actual codebase
+- **Identify feature gaps**: List missing or incomplete functionality from project docs
+- **Assess project progress**: Evaluate completion percentage and milestone status
+
+### 2. New Functionality Suggestions
+Based on project documentation analysis:
+- **Missing Core Features**: Essential functionality not yet implemented
+- **Enhancement Opportunities**: Improvements to existing features
+- **Integration Needs**: Third-party services or APIs to integrate
+- **User Experience Improvements**: Features to enhance usability
+- **Performance Optimizations**: Features to improve system performance
+
+### 3. Implementation Order Planning
+Create prioritized roadmap:
+- **Phase 1 (Immediate)**: Critical missing features blocking project goals
+- **Phase 2 (Short-term)**: Important enhancements and integrations
+- **Phase 3 (Medium-term)**: User experience improvements and optimizations
+- **Phase 4 (Long-term)**: Advanced features and performance enhancements
 
 ## Analysis Requirements
 
@@ -135,75 +163,85 @@ Evaluate adherence to:
 
 ## Required Documentation Outputs
 
-Create these files in `docs/` folder:
+Create these files in `docs/reports/report_yyyy.mm.dd-hh.mm.ss/` folder:
 
-### 1. `analysis-executive-summary.md`
+### 1. `project-state-assessment.md`
+- Analysis of docs/projects.md vs current implementation
+- Project completion percentage and milestone status
+- Feature gap identification and impact assessment
+
+### 2. `new-functionality-roadmap.md`
+- Suggested new features based on project documentation gaps
+- Implementation order with 4-phase roadmap
+- Resource requirements and timeline estimates
+
+### 3. `analysis-executive-summary.md`
 - High-level findings
 - Critical issues requiring immediate attention
 - Overall project health assessment
 - Recommended action plan
 
-### 2. `task-breakdown-critical.md`
+### 4. `task-breakdown-critical.md`
 - All critical priority tasks
 - Detailed execution steps
 - Resource requirements
 - Timeline estimates
 
-### 3. `task-breakdown-high.md`
+### 5. `task-breakdown-high.md`
 - High priority tasks with full details
 
-### 4. `task-breakdown-medium.md`
+### 6. `task-breakdown-medium.md`
 - Medium priority tasks with full details
 
-### 5. `task-breakdown-low.md`
+### 7. `task-breakdown-low.md`
 - Low priority tasks with full details
 
-### 6. `code-quality-report.md`
+### 8. `code-quality-report.md`
 - Best practices audit results
 - Code quality metrics
 - Improvement recommendations
 
-### 7. `security-assessment.md`
+### 9. `security-assessment.md`
 - Security vulnerability findings
 - Compliance gaps
 - Security recommendations
 
-### 8. `performance-analysis.md`
+### 10. `performance-analysis.md`
 - Performance bottlenecks
 - Optimization opportunities
 - Load testing recommendations
 
-### 9. `architecture-review.md`
+### 11. `architecture-review.md`
 - Architecture assessment
 - Design pattern analysis
 - Scalability recommendations
 
-### 10. `duplicate-functions-report.md`
+### 12. `duplicate-functions-report.md`
 - Duplicate code findings
 - Consolidation opportunities
 - Refactoring roadmap
 
-### 11. `documentation-gaps.md`
+### 13. `documentation-gaps.md`
 - Missing documentation inventory
 - Documentation improvement plan
 - Content recommendations
 
-### 12. `dependency-audit.md`
+### 14. `dependency-audit.md`
 - Dependency analysis
 - Security vulnerabilities
 - Update recommendations
 
-### 13. `devops-recommendations.md`
+### 15. `devops-recommendations.md`
 - CI/CD improvements
 - Infrastructure optimization
 - Monitoring setup
 
-### 14. `technical-debt-assessment.md`
+### 16. `technical-debt-assessment.md`
 - Technical debt quantification
 - Prioritized remediation plan
 - Long-term maintenance strategy
 
-### 15. `quick-wins.md`
+### 17. `quick-wins.md`
 - Easy-to-implement improvements
 - Low-effort, high-impact changes
 - 30-day action plan
@@ -214,7 +252,7 @@ Create these files in `docs/` folder:
 ```markdown
 # [Document Title]
 **Generated**: [Date and Time]  
-**Branch**: analysis-report-[timestamp]  
+**Report ID**: report_yyyy.mm.dd-hh.mm.ss
 **Analysis Scope**: [Full codebase/Specific modules]  
 **Priority Level**: [Critical/High/Medium/Low]  
 
@@ -259,35 +297,40 @@ Create these files in `docs/` folder:
 
 ## Analysis Methodology
 
-1. **Repository Structure Analysis**: Map complete project architecture
-2. **Entry Point Discovery**: Identify main files, configuration, key modules
-3. **Code Flow Tracing**: Follow execution paths through the application
-4. **Pattern Recognition**: Look for repeated code patterns across files
-5. **Dependency Mapping**: Analyze internal and external dependencies
-6. **Security Scanning**: Automated and manual security assessment
-7. **Performance Profiling**: Identify bottlenecks and optimization opportunities
-8. **Quality Metrics**: Calculate code quality scores and metrics
-9. **Documentation Audit**: Compare code features with existing documentation
-10. **Best Practices Review**: Evaluate against industry standards
-11. **Technical Debt Assessment**: Quantify maintenance burden
-12. **Scalability Analysis**: Assess growth and scaling requirements
+1. **docs/projects.md Analysis**: Read and extract all project goals, planned features, and milestones
+2. **Project State Mapping**: Compare documented features with current codebase implementation
+3. **Repository Structure Analysis**: Map complete project architecture
+4. **Entry Point Discovery**: Identify main files, configuration, key modules
+5. **Code Flow Tracing**: Follow execution paths through the application
+6. **Pattern Recognition**: Look for repeated code patterns across files
+7. **Dependency Mapping**: Analyze internal and external dependencies
+8. **Security Scanning**: Automated and manual security assessment
+9. **Performance Profiling**: Identify bottlenecks and optimization opportunities
+10. **Quality Metrics**: Calculate code quality scores and metrics
+11. **Documentation Audit**: Compare code features with existing documentation
+12. **Best Practices Review**: Evaluate against industry standards
+13. **Technical Debt Assessment**: Quantify maintenance burden
+14. **Scalability Analysis**: Assess growth and scaling requirements
+15. **Feature Gap Analysis**: Identify missing functionality from project documentation
+16. **Implementation Roadmap Creation**: Prioritize new features based on project needs
 
 ## Git Workflow Instructions
 
-1. **Create Branch**: `git checkout -b analysis-report-[timestamp]`
-2. **Create docs directory**: `mkdir -p docs/analysis`
+1. **Create Branch**: `git checkout -b reports`
+2. **Create timestamped directory**: `mkdir -p docs/reports/report_$(date +%Y.%m.%d-%H.%M.%S)`
 3. **Generate all reports**: Create all required markdown files
 4. **Commit reports**: 
    ```bash
-   git add docs/
-   git commit -m "Add comprehensive codebase analysis reports
+   git add docs/reports/
+   git commit -m "Add comprehensive project analysis and implementation roadmap
    
-   - Executive summary and priority task breakdown
+   - Project state assessment comparing docs/projects.md with current implementation
+   - New functionality suggestions with prioritized implementation order
    - Security, performance, and architecture assessments  
    - Code quality metrics and improvement recommendations
    - Technical debt analysis and remediation roadmap"
    ```
-5. **Create summary README**: `docs/README.md` with links to all reports
+5. **Create summary README**: `docs/reports/report_yyyy.mm.dd-hh.mm.ss/README.md` with links to all reports
 
 ## Quality Assurance
 Each report must include:
@@ -297,11 +340,14 @@ Each report must include:
 - Success criteria and testing requirements
 - Risk assessment and mitigation strategies
 - Timeline considerations and dependencies
+- References to docs/projects.md where applicable
 
 ## Final Deliverable Structure
 ```
-docs/
+docs/reports/report_yyyy.mm.dd-hh.mm.ss/
 ├── README.md (Navigation and summary)
+├── project-state-assessment.md
+├── new-functionality-roadmap.md
 ├── analysis-executive-summary.md
 ├── task-breakdown-critical.md
 ├── task-breakdown-high.md
