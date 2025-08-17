@@ -2,7 +2,7 @@ COMMIT PERMISSIONS & RESTRICTIONS You are authorized to:
 
 CREATE a new branch named analysis-report-[timestamp] (e.g., analysis-report-20240803) COMMIT ONLY documentation files to the docs/ folder GENERATE reports, task lists, and analysis documents STRICTLY PROHIBITED:
 
-Modifying any source code files Committing to main/master or any existing branches Making changes outside the docs/ folder Implementing any code fixes or features Primary Objective Conduct a comprehensive analysis of the codebase and provide actionable insights organized into prioritized task lists with clear execution paths, documented in the docs/ folder.
+Modifying any source code files Committing to main/master or any existing branches Making changes outside the docs/reports/report_yyyy.mm.dd-hh.mm.ss/ folder folder Implementing any code fixes or features Primary Objective Conduct a comprehensive analysis of the codebase and provide actionable insights organized into prioritized task lists with clear execution paths, documented in the docs/ folder.
 
 Analysis Requirements
 
